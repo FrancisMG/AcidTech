@@ -12,6 +12,8 @@ gem 'devise'
 gem 'ckeditor'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
+gem 'carrierwave', '~> 1.0'
+gem "mini_magick"
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server

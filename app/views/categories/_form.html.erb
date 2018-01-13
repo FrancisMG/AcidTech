@@ -1,3 +1,9 @@
+<div id="wrapper">
+
+  <%= render partial: 'dashboard/sidebar' %>
+
+  <div id="page-wrapper">
+
 <%= form_with(model: category, local: true) do |form| %>
   <% if category.errors.any? %>
     <div id="error_explanation">
@@ -20,3 +26,6 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+</div>
+</div>

@@ -28,3 +28,15 @@ Category.create!([{
 	name: 'Tech News'
 	}
 ])
+
+
+
+Admin.create! ([{
+
+	email: 'van@fgcorporation.com',
+	password: 'vanpangit',
+
+
+}
+
+	])
