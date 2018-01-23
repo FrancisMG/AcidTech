@@ -1,7 +1,7 @@
 class Article < ApplicationRecord
    mount_uploader :featureimage, FeatureimageUploader
 		has_many :comments
-	belongs_to :category
+	   belongs_to :category
 		has_many :taggings
 	has_many :tags, through: :taggings
 

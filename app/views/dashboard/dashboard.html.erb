@@ -7,12 +7,12 @@
 <div>
 	
 	<h5> Visitors per Day</h5>
-		
+	<%= line_chart Visit.group_by_day(:started_at).count %>
 </div>
 
 <div>
 	<h5> Visitors Category</h5>
-		
+		<%= column_chart Ahoy::Event.group(:name).count %>
 </div>
 		
 	</div>

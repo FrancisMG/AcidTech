@@ -19,7 +19,7 @@ end
 def gadget_news
 	 @articles = Article.all
 	 @categories = Category.all
-	  ahoy.track_visit
+
 
 	  # ahoy.track "Viewed gadget_news"
 
@@ -28,7 +28,7 @@ end
 def diy
 	 @articles = Article.all
 	 @categories = Category.all
-	  ahoy.track_visit
+
 
 	  # ahoy.track "Viewed diy"
 end
@@ -36,14 +36,13 @@ end
 def gamers_hub
 	 @articles = Article.all
 	 @categories = Category.all
-	  ahoy.track_visit
+	 
 	  # ahoy.track "Viewed gamers_hub"
 end
 
 def latest_news
 	 @articles = Article.all
 	 @categories = Category.all
-	  ahoy.track_visit
 
 	  # ahoy.track "Viewed latest_news"
 end
@@ -52,8 +51,7 @@ end
 def tech_news
 	 @articles = Article.all
 	 @categories = Category.all
-	  ahoy.track_visit
-
+	 
 	  # ahoy.track "Viewed tech_news"
 end
 
