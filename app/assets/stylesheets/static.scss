@@ -159,17 +159,35 @@ background-color: #0bef5c;
   
 }
 
-.footer-category {
 
-  list-style-type: none;
+
+.footer_logo{
+
+  width: 150px;
+  height: 150px;
+}
+
+
+
+ .footer-navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+
+  }
+
+
+
+ a{
+  color: white;
   
+  
+ }
+a:hover {
+  color: green;
 }
 
-.footer-category li {
-  padding-top: 10px;
- font-size: 14px;
-
- font-weight: light;
 
 
-}
+
+
