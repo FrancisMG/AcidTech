@@ -20,7 +20,7 @@
 <div class="form-group"> 
  <%= image_tag(@article.featureimage_url) if @article.featureimage? %>
  <%= form.file_field :featureimage, class: "form-control" %>
- <%= form.hidden_field :featureimage_cache,class: "img-responsive" %>
+ <%= form.hidden_field :featureimage_cache, class: "img-responsive" %>
 </div>
 
 
