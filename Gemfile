@@ -13,6 +13,7 @@ gem 'ckeditor'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
 gem 'carrierwave', '~> 1.0'
+gem 'jquery-datatables-rails', '~> 3.4.0'
 gem "mini_magick"
 gem 'ahoy_matey'
 gem 'groupdate'

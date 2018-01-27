@@ -18,5 +18,14 @@
 //= require Chart.bundle
 //= require chartkick
 //= require bootstrap-sprockets
+//= require dataTables/jquery.dataTables
+//= require articles
 //= require_tree .
 
+
+
+$(document).ready(function(){
+  $('#articles').dataTable({
+       
+    });
+});
