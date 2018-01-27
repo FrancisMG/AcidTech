@@ -8517,3 +8517,17 @@ Processing by StaticController#index as HTML
 Completed 200 OK in 735ms (Views: 670.9ms | ActiveRecord: 11.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-01-27 14:38:43 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/_header.html.erb (3.3ms)
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 1]]
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 5]]
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 4]]
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 2]]
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered static/_footer.html.erb (16.4ms)
+  Rendered static/index.html.erb within layouts/application (79.7ms)
+Completed 200 OK in 967ms (Views: 925.1ms | ActiveRecord: 7.6ms)
+
+
