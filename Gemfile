@@ -18,6 +18,7 @@ gem "mini_magick"
 gem 'ahoy_matey'
 gem 'groupdate'
 gem "chartkick"
+gem 'rails_real_favicon'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server

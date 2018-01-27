@@ -8889,3 +8889,46 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 140ms (Views: 135.5ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/dashboard/dashboard" for 127.0.0.1 at 2018-01-27 20:26:47 +0800
+Processing by DashboardController#dashboard as HTML
+  Parameters: {"page"=>"dashboard"}
+  [1m[36mAdmin Load (5.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 ORDER BY "admins"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering dashboard/dashboard.html.erb within layouts/application
+  Rendered dashboard/_sidebar.html.erb (3.6ms)
+  [1m[35m (373.5ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, (DATE_TRUNC('day', (started_at::timestamptz - INTERVAL '0 second') AT TIME ZONE 'Etc/UTC') + INTERVAL '0 second') AT TIME ZONE 'Etc/UTC' AS date_trunc_day_started_at_timestamptz_interval_0_second_at_time FROM "visits" WHERE (started_at IS NOT NULL) GROUP BY (DATE_TRUNC('day', (started_at::timestamptz - INTERVAL '0 second') AT TIME ZONE 'Etc/UTC') + INTERVAL '0 second') AT TIME ZONE 'Etc/UTC'[0m
+  [1m[35m (42.6ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "ahoy_events"."name" AS ahoy_events_name FROM "ahoy_events" GROUP BY "ahoy_events"."name"[0m
+  Rendered dashboard/dashboard.html.erb within layouts/application (671.7ms)
+Completed 200 OK in 2832ms (Views: 2213.2ms | ActiveRecord: 433.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-27 22:39:30 +0800
+  [1m[35m (51.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-01-27 22:39:31 +0800
+Processing by StaticController#index as HTML
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/_header.html.erb (1.5ms)
+  Rendered static/_header.html.erb (0.9ms)
+  [1m[36mArticle Load (16.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 1]]
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 5]]
+  [1m[36mArticle Load (3.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 4]]
+  [1m[36mArticle Load (2.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 2]]
+  [1m[36mArticle Load (2.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 1]]
+  [1m[36mArticle Load (17.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 5]]
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 3]]
+  [1m[36mArticle Load (9.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 4]]
+  [1m[36mArticle Load (230.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 2]]
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered static/_footer.html.erb (28093.2ms)
+  Rendered static/_footer.html.erb (27807.3ms)
+  Rendered static/index.html.erb within layouts/application (28365.4ms)
+  Rendered static/index.html.erb within layouts/application (28375.1ms)
+  Rendered application/_favicon.html.erb (57.8ms)
+  Rendered application/_favicon.html.erb (61.1ms)
+Completed 200 OK in 29261ms (Views: 28984.6ms | ActiveRecord: 85.7ms)
+
+
+Completed 200 OK in 29398ms (Views: 28813.2ms | ActiveRecord: 354.8ms)
+
+
