@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
 	  root 'static#index'
 
   resources :comments
   resources :tags
-	mount Ckeditor::Engine => '/ckeditor'
+
   devise_for :admins, controllers: {sessions: 'admins/sessions'}
   resources :articles
   resources :categories
