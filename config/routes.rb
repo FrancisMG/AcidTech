@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :comments
   resources :tags
 	mount Ckeditor::Engine => '/ckeditor'
-  devise_for :admins
+  devise_for :admins, controllers: {sessions: 'admins/sessions'}
   resources :articles
   resources :categories
 
